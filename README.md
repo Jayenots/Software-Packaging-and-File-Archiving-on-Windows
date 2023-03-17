@@ -34,14 +34,13 @@ Open the virtual manchine as this is where you’ll be performing these steps in
 
 <h2>Installing Sublime Text</h2>
 
-First, you'll install the Sublime Text editor. Using Google Chrome, visit [https://www.sublimetext.com](https://www.sublimetext.com/) to download the latest version of Sublime Text. Once you have downloaded the file, open your "Downloads" folder under **C:\Users\Qwiklabs**\**Downloads**. You should see the installer, called "sublime_text_build_4126_x64_setup.exe". Double click the executable and the process should begin.
+First, you'll install the Sublime Text editor. Using Google Chrome, visit [https://www.sublimetext.com](https://www.sublimetext.com/) to download the latest version of Sublime Text. Once you have downloaded the file, open your "Downloads" folder under **C:\Users\Qwiklabs\Downloads**. You should see the installer, called "sublime_text_build_4126_x64_setup.exe". Double click the executable and the process should begin.
 
 <a href="https://imgur.com/usA0Qsj"><img src="https://i.imgur.com/usA0Qsj.png" title="source: imgur.com" /></a>
 
 Leave the folder location as default, just click on the **Next**  button to proceed with the installation.
 
-Now, click on the **Install**  button. When the installation is finished, click the Search icon in the bottom-left of the taskbar, and start typing “Sublime Text” to search. This will bring up the **Sublime Text**
-editor. (as shown below).
+Now, click on the **Install**  button. When the installation is finished, click the Search icon in the bottom-left of the taskbar, and start typing “Sublime Text” to search. This will bring up the **Sublime Text** editor. (as shown below). This version is old so it may ask you to update after completion.
 
 <a href="https://imgur.com/YH4q0c1"><img src="https://i.imgur.com/YH4q0c1.png" title="source: imgur.com" /></a>
 
@@ -49,7 +48,7 @@ editor. (as shown below).
 
 <a href="https://imgur.com/JjVoDLl"><img src="https://i.imgur.com/JjVoDLl.png" title="source: imgur.com" /></a>
 
-**Extracting using 7-Zip**
+<h2>**Extracting using 7-Zip**</h2>
 
 7-Zip is a super useful program for working with archived or zipped files, and it's already been installed on your system. Using File Explorer navigate to "**C:\Users\Qwiklabs\Downloads**". This folder contains a .tar archive called "example.tar". You don't have permissions to extract files in this .tar file's current folder, so click-and-drag the file to the Desktop. After moving the file, you'll be prompted to confirm the move; click "Continue" to finish the move. Then, you can use it to extract the contents of the archive by right-clicking "example.tar" (now on the Desktop), hovering over "7-Zip", and clicking "Extract Here":
 
@@ -73,7 +72,7 @@ Now you'll build multiple files into a .zip archive using PowerShell. Open Power
 
 Now, Use the following command:
 
-cd C:\Users\ **Qwiklabs**\Documents\
+cd C:\Users\Qwiklabs\Documents\
 
 to navigate to the "Documents" folder. Once you're there, you can create a .zip archive (called Planets.zip) using this command:
 
@@ -127,6 +126,11 @@ cmd.exe /c "C:\Program Files\GIMP 2\uninst\unins000.exe" /VERYSILENT /NORESTART
 
 Once the process finishes, GIMP will no longer be available on your system. You can verify this with the following command and notice that GIMP is not listed:
 
+<a href="https://imgur.com/pKLdX0j"><img src="https://i.imgur.com/pKLdX0j.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/T86eRbn"><img src="https://i.imgur.com/T86eRbn.png" title="source: imgur.com" /></a>
+
 Get-Package
+
+<a href="https://imgur.com/xaYYc8E"><img src="https://i.imgur.com/xaYYc8E.png" title="source: imgur.com" /></a>
 
 Congrats! We've successfully installed and uninstalled programs on Windows using both the GUI and CLI tools, as well as archived and unarchived .tar files.
