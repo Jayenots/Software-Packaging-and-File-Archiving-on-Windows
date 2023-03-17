@@ -4,39 +4,20 @@
 <a href="https://imgur.com/xw4G10D"><img src="https://i.imgur.com/xw4G10D.jpg" title="source: imgur.com" /></a>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket. OsTicket is a widely-used open source support ticket system which seamlessly integrates inquiries created via email, phone and web-based forms into a simple easy-to-use multi-user web interface. It can manage, organize and archive all your support requests and responses in one place while providing your customers with accountability and responsiveness.<br />
+In this lab, we'll learn how to install and remove software in the Windows GUI and CLI, and work with zipped files. We'll install a text editor, called Sublime Text, and extract/un-extract .tar files. We'll also use *Windows Powershell*  to install and uninstall programs on Windows.
 
-
-<h2>Video Demonstration</h2>
-
-- ### [ How To Setup a Resource Group](https://loom.com/share/a4b3e70ccf6246aa89bed4496dea9a86)
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
-- Internet Information Services (IIS)
+- Qwiklabs
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
-
-- Create the environment using Azure
-- Install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
-- Install Rewrite Module (rewrite_amd64_en-US.msi)
-- Create a directory c:\PHP
-- Download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
-<a href="https://imgur.com/hSxWqeY"><img src="https://i.imgur.com/hSxWqeY.png" title="source: imgur.com" /></a>
-
-# Software Packaging and File Archiving on Windows
-
-In this lab, we'll learn how to install and remove software in the Windows GUI and CLI, and work with zipped files. We'll install a text editor, called Sublime Text, and extract/un-extract .tar files. We'll also use *Windows Powershell*  to install and uninstall programs on Windows.
-
-**What you'll do**
-
+<h2>List of Prerequisites and Tasks</h2>
 You have a bunch of tasks for this lab. First, you'll install and remove software using the Windows graphical user-interface (GUI). Second, you'll remove and install software using the Windows Command Line Interface (CLI), known as Powershell. Third, you'll extract and compress files into a .zip archive in the GUI and CLI.
 
 - Install Sublime Text using Windows GUI
@@ -44,50 +25,51 @@ You have a bunch of tasks for this lab. First, you'll install and remove softwar
 - Install VLC using Windows Powershell
 - Uninstall GIMP using Windows Powershell
 
-Open ******VM******  as this is where you’ll be performing these steps in the lab. For this lab, we’re using Qwiklabs. Remember that if you use Azure to delete the resources at the end of the lab to save the credits of avoid a big bill at the end of the month ( 🥲 you really don’t want this surprise)
+Open the virtual manchine as this is where you’ll be performing these steps in the lab. For this lab, we’re using Qwiklabs. Remember that if you use Azure to delete the resources at the end of the lab to save the credits of avoid a big bill at the end of the month ( 🥲 you really don’t want this surprise)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f2ffe510-224b-4db8-be1c-d816a21f4d51/Untitled.png)
 
-# **Install and uninstall software using Windows GUI**
+<a href="https://imgur.com/kcaE1U2"><img src="https://i.imgur.com/kcaE1U2.png" title="source: imgur.com" /></a>
 
-**Installing Sublime Text**
+**Install and uninstall software using Windows GUI**
+
+<h2>Installing Sublime Text</h2>
 
 First, you'll install the Sublime Text editor. Using Google Chrome, visit [https://www.sublimetext.com](https://www.sublimetext.com/) to download the latest version of Sublime Text. Once you have downloaded the file, open your "Downloads" folder under **C:\Users\Qwiklabs**\**Downloads**. You should see the installer, called "sublime_text_build_4126_x64_setup.exe". Double click the executable and the process should begin.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4d9e1db6-af25-4df3-814f-43cda8d6d45c/Untitled.png)
+<a href="https://imgur.com/usA0Qsj"><img src="https://i.imgur.com/usA0Qsj.png" title="source: imgur.com" /></a>
 
 Leave the folder location as default, just click on the **Next**  button to proceed with the installation.
 
 Now, click on the **Install**  button. When the installation is finished, click the Search icon in the bottom-left of the taskbar, and start typing “Sublime Text” to search. This will bring up the **Sublime Text**
 editor. (as shown below).
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a3c2afd8-0d11-47c6-b707-a5508fbdb7ec/Untitled.png)
+<a href="https://imgur.com/YH4q0c1"><img src="https://i.imgur.com/YH4q0c1.png" title="source: imgur.com" /></a>
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e5fe4f50-6205-41e4-977c-95e346474cfa/Untitled.png)
+<a href="https://imgur.com/c8Ll2Dt"><img src="https://i.imgur.com/c8Ll2Dt.png" title="source: imgur.com" /></a>
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/06becce0-59f6-4da2-a973-b3950436bd69/Untitled.png)
+<a href="https://imgur.com/JjVoDLl"><img src="https://i.imgur.com/JjVoDLl.png" title="source: imgur.com" /></a>
 
-# **Extracting using 7-Zip**
+**Extracting using 7-Zip**
 
 7-Zip is a super useful program for working with archived or zipped files, and it's already been installed on your system. Using File Explorer navigate to "**C:\Users\Qwiklabs\Downloads**". This folder contains a .tar archive called "example.tar". You don't have permissions to extract files in this .tar file's current folder, so click-and-drag the file to the Desktop. After moving the file, you'll be prompted to confirm the move; click "Continue" to finish the move. Then, you can use it to extract the contents of the archive by right-clicking "example.tar" (now on the Desktop), hovering over "7-Zip", and clicking "Extract Here":
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2a27001c-e94b-4f35-9b07-b0d4a65d1c04/Untitled.png)
+<a href="https://imgur.com/h2lGUmR"><img src="https://i.imgur.com/h2lGUmR.png" title="source: imgur.com" /></a>
 
 Afterwards, you'll see the contents of the .tar file on the Desktop, alongside the archive:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/26e028f1-7d4c-41ce-acda-4c9a9a9a2ae3/Untitled.png)
+<a href="https://imgur.com/h6X4YWE"><img src="https://i.imgur.com/h6X4YWE.png" title="source: imgur.com" /></a>
 
 # **Archiving files**
 
 Now you'll perform the other half of the process, bundling multiple files into a .zip archive. Navigate to **"C:\Users\Qwiklabs\Documents"** and find the three files named, "Earth", "Mercury", and "Venus":
 
-[https://cdn.qwiklabs.com/W6czqlE0AKmABwXRfgQ0znK2TSV8jg5DOjH7zeNi0%2Fk%3D](https://cdn.qwiklabs.com/W6czqlE0AKmABwXRfgQ0znK2TSV8jg5DOjH7zeNi0%2Fk%3D)
+<a href="https://imgur.com/eGR7aQN"><img src="https://i.imgur.com/eGR7aQN.png" title="source: imgur.com" /></a>
 
 **Archiving files with PowerShell**
 
 Now you'll build multiple files into a .zip archive using PowerShell. Open Powershell and navigate to this folder. (Make sure you have administrative privileges enabled!). So, search for `Windows Powershell`, right-click it, and select **"Run as Administrator"**.
 
-[https://cdn.qwiklabs.com/5AubM9PzO4npKI5zNrU7uj25wA%2BF6W7MHW%2BfPk33vBM%3D](https://cdn.qwiklabs.com/5AubM9PzO4npKI5zNrU7uj25wA%2BF6W7MHW%2BfPk33vBM%3D)
+<a href="https://imgur.com/ZjdRL5Q"><img src="https://i.imgur.com/ZjdRL5Q.png" title="source: imgur.com" /></a>
 
 Now, Use the following command:
 
@@ -95,9 +77,7 @@ cd C:\Users\ **Qwiklabs**\Documents\
 
 to navigate to the "Documents" folder. Once you're there, you can create a .zip archive (called Planets.zip) using this command:
 
-Compress-Archive -Path Earth, Mercury, Venus Planets.zip
-
-# I**nstall and uninstall software using Windows CLI**
+Compress-Archive -Path Earth, Mercury, Venus Planets.zip**Install and uninstall software using Windows CLI**
 
 **Installing VLC**
 
@@ -109,9 +89,7 @@ $VLC_URL = "[https://get.videolan.org/vlc/last/win64/](https://get.videolan.org/
 
 $GET_HTML = Invoke-WebRequest  $VLC_URL
 
- 
-
-$FILE = $GET_HTML.Links |Select-Object 
+ $FILE = $GET_HTML.Links |Select-Object 
 
 @{Label='href';Expression={@{$true=$_*.href}*
 
@@ -129,11 +107,17 @@ $OUTPUT_FILE = ($DOWNLOAD_DIR+$FILE)
 
 cmd.exe /c $OUTPUT_FILE /S
 
+<a href="https://imgur.com/bqpprP4"><img src="https://i.imgur.com/bqpprP4.png" title="source: imgur.com" /></a>
+
 Once the installation process is successfully completed,  we can verify that VLC has successfully been installed with the following command:
 
 Get-Package -Name *vlc***
+ As you can see I had issues with the typing in of commands ( will be working on that), especially with the spaces ( it's the space, missing or extra, that'll get you)
 
 # **Uninstalling GIMP**
+
+<a href="https://imgur.com/gRbycTF"><img src="https://i.imgur.com/gRbycTF.png" title="source: imgur.com" /></a>
+
 
 You can use `Windows Powershell` to uninstall programs. If you've closed your PowerShell window, reopen it again by searching for it in the Start Menu, then right-clicking it and selecting "Run as Administrator".
 
