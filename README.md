@@ -1,7 +1,7 @@
 # Software-Packaging-and-File-Archiving-on-Windows
 
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+<a href="https://imgur.com/xw4G10D"><img src="https://i.imgur.com/xw4G10D.jpg" title="source: imgur.com" /></a>
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
