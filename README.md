@@ -51,7 +51,7 @@ Now, click on the **Install**  button. When the installation is finished, clic
 <a href="https://imgur.com/JjVoDLl"><img src="https://i.imgur.com/JjVoDLl.png" title="source: imgur.com" /></a>
 </p>
  
-<h2>**Extracting using 7-Zip**</h2>
+<h2>Extracting using 7-Zip</h2>
 
 7-Zip is a super useful program for working with archived or zipped files, and it's already been installed on your system. Using File Explorer navigate to "**C:\Users\Qwiklabs\Downloads**". This folder contains a .tar archive called "example.tar". You don't have permissions to extract files in this .tar file's current folder, so click-and-drag the file to the Desktop. After moving the file, you'll be prompted to confirm the move; click "Continue" to finish the move. Then, you can use it to extract the contents of the archive by right-clicking "example.tar" (now on the Desktop), hovering over "7-Zip", and clicking "Extract Here":
 
@@ -95,27 +95,21 @@ There are alternatives to manually downloading and running installers when you n
 
 In the `Windows Powershell` terminal, enter the following commands to download and install VLC media player.
 
-$VLC_URL = "[https://get.videolan.org/vlc/last/win64/](https://get.videolan.org/vlc/last/win64/)"
+👉$VLC_URL = "[https://get.videolan.org/vlc/last/win64/](https://get.videolan.org/vlc/last/win64/)"
 
-$GET_HTML = Invoke-WebRequest  $VLC_URL
+👉$GET_HTML = Invoke-WebRequest  $VLC_URL
 
- $FILE = $GET_HTML.Links |Select-Object 
+👉$FILE = $GET_HTML.Links |Select-Object@{Label='href';Expression={@{$true=$_*.href}* *[$_*.href.EndsWith('win64.exe')]}} |Select-Object -ExpandProperty href
 
-@{Label='href';Expression={@{$true=$_*.href}*
+👉$URL = ($VLC_URL+$FILE)
 
-*[$_*.href.EndsWith('win64.exe')]}} | 
+👉$DOWNLOAD_DIR = "C:\users\’username’\Downloads\”
 
-Select-Object -ExpandProperty href
+👉$OUTPUT_FILE = ($DOWNLOAD_DIR+$FILE)
 
-$URL = ($VLC_URL+$FILE)
+👉(new-object System.Net.WebClient).DownloadFile($URL, $OUTPUT_FILE)
 
-$DOWNLOAD_DIR = "C:\users\’username’\Downloads\”
-
-$OUTPUT_FILE = ($DOWNLOAD_DIR+$FILE)
-
-(new-object System.Net.WebClient).DownloadFile($URL, $OUTPUT_FILE)
-
-cmd.exe /c $OUTPUT_FILE /S
+👉cmd.exe /c $OUTPUT_FILE /S
 
 <p align="center">
 <a href="https://imgur.com/bqpprP4"><img src="https://i.imgur.com/bqpprP4.png" title="source: imgur.com" /></a>
