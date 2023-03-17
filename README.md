@@ -126,7 +126,6 @@ cmd.exe /c "C:\Program Files\GIMP 2\uninst\unins000.exe" /VERYSILENT /NORESTART
 
 Once the process finishes, GIMP will no longer be available on your system. You can verify this with the following command and notice that GIMP is not listed:
 
-<a href="https://imgur.com/pKLdX0j"><img src="https://i.imgur.com/pKLdX0j.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/T86eRbn"><img src="https://i.imgur.com/T86eRbn.png" title="source: imgur.com" /></a>
 
 Get-Package
