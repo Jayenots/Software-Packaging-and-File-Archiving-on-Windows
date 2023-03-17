@@ -28,7 +28,7 @@ You have a bunch of tasks for this lab. First, you'll install and remove softwar
 Open the virtual manchine as this is where you’ll be performing these steps in the lab. For this lab, we’re using Qwiklabs. Remember that if you use Azure to delete the resources at the end of the lab to save the credits of avoid a big bill at the end of the month ( 🥲 you really don’t want this surprise)
 
 
-<a href="https://imgur.com/kcaE1U2"><img src="https://i.imgur.com/kcaE1U2.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/dR6u77f"><img src="https://i.imgur.com/dR6u77f.png" title="source: imgur.com" /></a>
 
 **Install and uninstall software using Windows GUI**
 
